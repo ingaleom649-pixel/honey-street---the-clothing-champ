@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Account — Honeystreet</title>
+  <meta name="description" content="Create your Honeystreet account." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dark-mode.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div id="header-slot"></div>
+
+  <main class="fade-page">
+    <div class="auth-wrap">
+      <div class="auth-card reveal visible">
+        <div class="logo" style="justify-content:center;margin-bottom:20px"><span class="logo-icon">H</span>Honey<span>street</span></div>
+        <h1>Create Account</h1>
+        <p class="sub">Join the Honeystreet family today.</p>
+
+        <form id="register-form">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" class="form-control" id="reg-name" placeholder="John Doe" required/>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" id="reg-email" placeholder="you@example.com" required/>
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" class="form-control" id="reg-phone" placeholder="+91 98765 43210"/>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" class="form-control" id="reg-password" placeholder="Min 8 chars" required/>
+            </div>
+            <div class="form-group">
+              <label>Confirm Password</label>
+              <input type="password" class="form-control" id="reg-confirm" placeholder="Repeat password" required/>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-gold btn-block">Create Account</button>
+        </form>
+
+        <div class="auth-footer">Already have an account? <a href="login.html">Login</a></div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-slot"></div>
+
+  <script type="module" src="js/api.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>

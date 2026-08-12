@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login — Honeystreet</title>
+  <meta name="description" content="Login to Honeystreet." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dark-mode.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div id="header-slot"></div>
+
+  <main class="fade-page">
+    <div class="auth-wrap">
+      <div class="auth-card reveal visible">
+        <div class="logo" style="justify-content:center;margin-bottom:20px"><span class="logo-icon">H</span>Honey<span>street</span></div>
+        <h1>Welcome back</h1>
+        <p class="sub">Login to continue to your Honeystreet account.</p>
+
+        <form id="login-form">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" id="login-email" placeholder="you@example.com" required/>
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" id="login-password" placeholder="••••••••" required/>
+          </div>
+          <div class="flex-between wrap" style="margin-bottom:20px">
+            <label class="checkbox-row"><input type="checkbox" id="remember-me"/> Remember me</label>
+            <a href="#" style="color:var(--brand-dark);font-size:0.88rem">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+
+        <div class="auth-footer">Don't have an account? <a href="register.html">Create Account</a></div>
+
+        <div style="margin-top:24px;padding:18px;background:var(--surface-2);border-radius:12px;border:1px solid var(--border)">
+          <div style="font-weight:600;font-size:0.9rem;margin-bottom:8px">Demo Accounts:</div>
+          <div style="font-size:0.85rem;color:var(--text-muted)">
+            <div><strong>Admin:</strong> admin@honeystreet.com / Admin@123</div>
+            <div><strong>Customer:</strong> customer@honeystreet.com / Customer@123</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-slot"></div>
+
+  <script type="module" src="js/api.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>

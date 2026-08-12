@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout — Honeystreet</title>
+  <meta name="description" content="Secure checkout at Honeystreet." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dark-mode.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div id="header-slot"></div>
+
+  <main class="fade-page">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Checkout</h1>
+        <div class="breadcrumb"><a href="cart.html">Cart</a> / <span>Checkout</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="checkout-layout" id="checkout-content">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-slot"></div>
+
+  <script type="module" src="js/api.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/checkout.js"></script>
+</body>
+</html>

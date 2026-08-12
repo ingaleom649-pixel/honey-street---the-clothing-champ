@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Honeystreet — Style That Walks With You | Premium Fashion</title>
+  <meta name="description" content="Honeystreet — Define Your Style. Premium fashion for everyday confidence." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dark-mode.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <!-- Header injected by main.js -->
+  <div id="header-slot"></div>
+
+  <main class="fade-page">
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1800&q=80" alt="Fashion hero" fetchpriority="high"/>
+      </div>
+      <div class="hero-float f1"></div>
+      <div class="hero-float f2"></div>
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-badge animate-in">✦ New Season · New Collection</span>
+          <h1 class="animate-in d1">Define Your <span class="accent">Style</span></h1>
+          <p class="animate-in d2">Discover premium fashion made for your everyday confidence.</p>
+          <div class="hero-cta animate-in d3">
+            <a href="shop.html?category=mens-clothing" class="btn btn-gold">Shop Men</a>
+            <a href="shop.html?category=womens-clothing" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.4)">Shop Women</a>
+          </div>
+          <div class="hero-stats animate-in d4">
+            <div class="stat"><h3>50K+</h3><span>Happy Customers</span></div>
+            <div class="stat"><h3>5K+</h3><span>Premium Products</span></div>
+            <div class="stat"><h3>4.8★</h3><span>Average Rating</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ================= FEATURED SPOTLIGHT ================= -->
+    <section class="section spotlight-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Editor's Pick</span>
+          <h2>Featured This Season</h2>
+          <p>Hand-picked premium pieces that define the Honeystreet aesthetic.</p>
+        </div>
+        <div class="spotlight-grid" id="home-spotlight">
+          <!-- Filled by JS -->
+        </div>
+        <div class="text-center mt-4">
+          <a href="shop.html?featured=true" class="btn btn-outline">Explore the Collection</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED CATEGORIES ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Curated For You</span>
+          <h2>Shop by Category</h2>
+          <p>From everyday essentials to statement pieces — find your perfect fit.</p>
+        </div>
+        <div class="cat-grid" id="home-categories">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEW ARRIVALS ================= -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Just Dropped</span>
+          <h2>New Arrivals</h2>
+          <p>Fresh styles, freshly added. Be the first to wear them.</p>
+        </div>
+        <div class="product-grid" id="home-new-arrivals">
+          <!-- Filled by JS -->
+        </div>
+        <div class="text-center mt-5">
+          <a href="shop.html?new=true" class="btn btn-outline">View All New Arrivals</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TRENDING ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Hot Right Now</span>
+          <h2>Trending Products</h2>
+          <p>The styles everyone is talking about.</p>
+        </div>
+        <div class="trending-scroll" id="home-trending">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SPECIAL OFFERS ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="offer-banner reveal">
+          <h2 class="offer-title">UP TO <span class="accent">50% OFF</span></h2>
+          <p>Limited-time seasonal sale on our best-loved styles.</p>
+          <div class="countdown" id="sale-countdown" data-deadline="+3d">
+            <div class="cd-box"><div class="num" data-days>00</div><div class="label">Days</div></div>
+            <div class="cd-box"><div class="num" data-hours>00</div><div class="label">Hours</div></div>
+            <div class="cd-box"><div class="num" data-minutes>00</div><div class="label">Minutes</div></div>
+            <div class="cd-box"><div class="num" data-seconds>00</div><div class="label">Seconds</div></div>
+          </div>
+          <a href="shop.html" class="btn btn-gold">Shop the Sale</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CUSTOMER REVIEWS ================= -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Testimonials</span>
+          <h2>What Our Customers Say</h2>
+          <p>Real reviews from the Honeystreet family.</p>
+        </div>
+        <div class="review-grid" id="home-reviews">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="newsletter reveal">
+          <h2>Join the Honeystreet Family</h2>
+          <p>Subscribe for exclusive offers, early access & style tips.</p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" placeholder="Enter your email address" required />
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SOCIAL / PROFESSIONAL ================= -->
+    <section class="section social-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Connect With Us</span>
+          <h2>Follow Our Journey</h2>
+          <p>Let's build, create and grow together.</p>
+        </div>
+        <div class="social-grid">
+          <a class="social-card reveal" href="https://www.linkedin.com/in/om-ingale-874a53427" target="_blank" rel="noopener">
+            <div class="social-icon li-icon">in</div>
+            <h3>LinkedIn</h3>
+            <p>Connect with the creator on LinkedIn</p>
+            <span class="btn btn-sm btn-outline">Open LinkedIn</span>
+          </a>
+          <a class="social-card reveal" href="https://www.instagram.com/" target="_blank" rel="noopener">
+            <div class="social-icon ig-icon">◎</div>
+            <h3>Instagram</h3>
+            <p>Daily style inspiration & drops</p>
+            <span class="btn btn-sm btn-outline">Follow Us</span>
+          </a>
+          <a class="social-card reveal" href="https://github.com/" target="_blank" rel="noopener">
+            <div class="social-icon gh-icon">⌥</div>
+            <h3>GitHub</h3>
+            <p>Explore the code behind this project</p>
+            <span class="btn btn-sm btn-outline">View GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer injected by main.js -->
+  <div id="footer-slot"></div>
+
+  <!-- Scripts -->
+  <script type="module" src="js/api.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/products.js"></script>
+  <script type="module" src="js/home.js"></script>
+</body>
+</html>

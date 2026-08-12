@@ -1,0 +1,179 @@
+/* ============================================================
+   Honeystreet — Dark Mode Theme
+   Applied via `dark-mode` class on <html> element
+   ============================================================ */
+
+html.dark-mode {
+  /* Brand (slightly brighter for dark contrast) */
+  --brand: #d4ad6a;
+  --brand-dark: #e6c98a;
+  --brand-light: #c9a15c;
+
+  /* Neutrals */
+  --bg: #0e0e10;
+  --bg-alt: #161619;
+  --surface: #1a1a1f;
+  --surface-2: #222228;
+  --text: #f0ece6;
+  --text-muted: #a8a29a;
+  --border: #2a2a31;
+  --border-strong: #3a3a44;
+
+  /* Semantic */
+  --danger: #e5484d;
+  --success: #46a074;
+  --info: #3b9bff;
+  --warning: #f5a524;
+
+  /* Effects */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.6);
+  --glass: rgba(20, 20, 24, 0.72);
+}
+
+/* Typography & body */
+html.dark-mode body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Header glass */
+html.dark-mode .header {
+  background: var(--glass);
+  border-bottom-color: var(--border);
+}
+
+/* Badge border uses bg variable which now is dark — fix to use contrasted */
+html.dark-mode .badge {
+  border-color: var(--bg);
+}
+
+/* Hero remains dark already; ensure text contrast stays */
+html.dark-mode .hero {
+  background: linear-gradient(120deg, #0a0a0c 0%, #121014 55%, #241d12 100%);
+}
+
+/* Newsletter & gold surfaces keep brand gradient */
+html.dark-mode .newsletter {
+  background: linear-gradient(135deg, var(--brand-light), var(--brand));
+  color: #1a1a1a;
+}
+
+/* Cards */
+html.dark-mode .product-card,
+html.dark-mode .review-card,
+html.dark-mode .cat-card,
+html.dark-mode .social-card,
+html.dark-mode .auth-card,
+html.dark-mode .order-card,
+html.dark-mode .cart-item,
+html.dark-mode .order-summary,
+html.dark-mode .checkout-form,
+html.dark-mode .profile-panel,
+html.dark-mode .profile-sidebar,
+html.dark-mode .shop-sidebar,
+html.dark-mode .admin-panel,
+html.dark-mode .stat-card,
+html.dark-mode .chart-box {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+/* Form controls */
+html.dark-mode .form-control,
+html.dark-mode .coupon-box input,
+html.dark-mode .shop-sort select {
+  background: var(--surface-2);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+html.dark-mode .form-control:focus {
+  border-color: var(--brand);
+}
+
+/* Wishlist button on image */
+html.dark-mode .wishlist-btn {
+  background: rgba(30, 30, 34, 0.85);
+  color: var(--text);
+}
+
+/* Product quick actions */
+html.dark-mode .product-quick-actions .btn {
+  background: rgba(240, 236, 230, 0.9);
+  color: #1a1a1a;
+}
+
+/* Search overlay */
+html.dark-mode .search-box {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+html.dark-mode .search-input-wrap input {
+  background: var(--surface-2);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+html.dark-mode .suggestion-item:hover {
+  background: var(--surface-2);
+}
+
+/* Modal */
+html.dark-mode .modal-content {
+  background: var(--surface);
+}
+
+html.dark-mode .modal-close {
+  background: var(--surface-2);
+}
+
+/* Page hero */
+html.dark-mode .page-hero {
+  background: linear-gradient(120deg, var(--bg-alt), var(--bg));
+  border-bottom-color: var(--border);
+}
+
+/* Tables */
+html.dark-mode .admin-table th,
+html.dark-mode .admin-table td {
+  border-bottom-color: var(--border);
+}
+
+html.dark-mode .admin-table tr:hover td {
+  background: var(--surface-2);
+}
+
+/* Skeleton */
+html.dark-mode .skeleton {
+  background: linear-gradient(90deg, var(--surface-2) 25%, var(--border) 50%, var(--surface-2) 75%);
+}
+
+/* Toast default */
+html.dark-mode .toast {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+/* Shipping / status badges keep fixed colors (fine) */
+
+/* Form placeholder */
+html.dark-mode ::placeholder {
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+/* Scrollbar for dark mode */
+html.dark-mode ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+html.dark-mode ::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+html.dark-mode ::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 999px;
+}

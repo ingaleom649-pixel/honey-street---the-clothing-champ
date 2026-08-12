@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Honeystreet</title>
+  <meta name="description" content="Contact Honeystreet." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dark-mode.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div id="header-slot"></div>
+
+  <main class="fade-page">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <div class="breadcrumb"><a href="index.html">Home</a> / <span>Contact</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="checkout-layout">
+          <form class="checkout-form" id="contact-form">
+            <h3>Get in Touch</h3>
+            <div class="form-row">
+              <div class="form-group"><label>Name</label><input class="form-control" placeholder="Your name" required/></div>
+              <div class="form-group"><label>Email</label><input type="email" class="form-control" placeholder="you@example.com" required/></div>
+            </div>
+            <div class="form-group"><label>Subject</label><input class="form-control" placeholder="How can we help?" required/></div>
+            <div class="form-group"><label>Message</label><textarea class="form-control" placeholder="Write your message..." required></textarea></div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+
+          <div class="order-summary">
+            <h3>Contact Information</h3>
+            <div class="summary-row"><span>📍</span><span>Honeystreet HQ, Fashion District</span></div>
+            <div class="summary-row"><span>📧</span><span>support@honeystreet.com</span></div>
+            <div class="summary-row"><span>📞</span><span>+91 98765 43210</span></div>
+            <div class="summary-row"><span>🕘</span><span>Mon–Sat, 9am–9pm</span></div>
+            <div style="margin-top:20px;padding-top:20px;border-top:1px solid var(--border)">
+              <h3>Connect With Us</h3>
+              <a class="btn btn-outline btn-block" style="margin-bottom:10px" href="https://www.linkedin.com/in/om-ingale-874a53427" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="btn btn-outline btn-block" style="margin-bottom:10px" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+              <a class="btn btn-outline btn-block" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-slot"></div>
+
+  <script type="module" src="js/api.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/contact.js"></script>
+</body>
+</html>
